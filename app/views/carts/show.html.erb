@@ -28,8 +28,8 @@
                         <td class="col-sm-1 col-md-1" style="text-align: center">
                          x <%= cart_item.quantity %>
                         </td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "€", separator: ",", format: "%n %u") %></strong></td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "€", separator: ",", format: "%n %u") %></strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "$", separator: ",", format: "%n %u") %></strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "$", separator: ",", format: "%n %u") %></strong></td>
                         <td class="col-sm-1 col-md-1">
                         <button type="button" class="btn btn-danger">
                         <%= link_to "Remove", cart_item_path(:id => cart_item), :method=>:delete, :remote => true %>
@@ -46,7 +46,7 @@
                         <td>   </td>
                         <td><h5>Subtotal</h5></td>
                         <td class="text-right"><h5><strong>
-                        <p class="font-weight-bold"><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "€", separator: ",", format: "%n %u") %></span></p>
+                        <p class="font-weight-bold"><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "$", separator: ",", format: "%n %u") %></span></p>
                         </strong></h5></td>
                     </tr>
                     <tr>
@@ -60,7 +60,7 @@
                         <td>   </td>
                         <td>   </td>
                         <td><h3>Total</h3></td>
-                        <td class="text-right"><h3><strong><p class="font-weight-bold"><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "€", separator: ",", format: "%n %u") %></span></p>                        </strong></h3></td>
+                        <td class="text-right"><h3><strong><p class="font-weight-bold"><span class="badge badge-info"><%= number_to_currency(current_user.cart.total_price, unit: "$", separator: ",", format: "%n %u") %></span></p>                        </strong></h3></td>
                     </tr>
                     <tr>
                         <td>   </td>
@@ -84,7 +84,7 @@
                           
                             <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                                    data-amount="<%=current_user.cart.total_price%>"
+                                    data-amount="<%=current_user.cart.total_price * 100%>"
                                     data-locale="auto">
                                      </script>
                           <% end %>
