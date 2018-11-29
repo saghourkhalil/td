@@ -1,0 +1,133 @@
+I, [2018-11-29T20:38:02.815481 #11899]  INFO -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:02 +0100
+I, [2018-11-29T20:38:02.926918 #11899]  INFO -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:02.963235 #11899]  INFO -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:03.006166 #11899]  INFO -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567]   Rendered items/index.html.erb within layouts/application (42.4ms)
+I, [2018-11-29T20:38:03.006871 #11899]  INFO -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567] Completed 500 Internal Server Error in 79ms
+F, [2018-11-29T20:38:03.010893 #11899] FATAL -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567]   
+F, [2018-11-29T20:38:03.011099 #11899] FATAL -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:03.011729 #11899] FATAL -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567]     56: 
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     57: 
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     58: <div class= "col">
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     59: <% @items.sort.each do |product| %>
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     60:     <div id="grid">
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     61: 
+[76b01e12-6cd8-4bf8-94bb-0278b7005567]     62:     <div class="product">
+F, [2018-11-29T20:38:03.011849 #11899] FATAL -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567]   
+F, [2018-11-29T20:38:03.011926 #11899] FATAL -- : [76b01e12-6cd8-4bf8-94bb-0278b7005567] app/views/items/index.html.erb:59:in `sort'
+[76b01e12-6cd8-4bf8-94bb-0278b7005567] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T20:38:03.073161 #11899]  INFO -- : [9b745657-3786-4413-b365-d35c90d7b22a] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-29 20:38:03 +0100
+F, [2018-11-29T20:38:03.074156 #11899] FATAL -- : [9b745657-3786-4413-b365-d35c90d7b22a]   
+F, [2018-11-29T20:38:03.074256 #11899] FATAL -- : [9b745657-3786-4413-b365-d35c90d7b22a] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-29T20:38:03.074316 #11899] FATAL -- : [9b745657-3786-4413-b365-d35c90d7b22a]   
+F, [2018-11-29T20:38:03.074382 #11899] FATAL -- : [9b745657-3786-4413-b365-d35c90d7b22a] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[9b745657-3786-4413-b365-d35c90d7b22a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[9b745657-3786-4413-b365-d35c90d7b22a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[9b745657-3786-4413-b365-d35c90d7b22a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[9b745657-3786-4413-b365-d35c90d7b22a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[9b745657-3786-4413-b365-d35c90d7b22a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[9b745657-3786-4413-b365-d35c90d7b22a] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[9b745657-3786-4413-b365-d35c90d7b22a] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[9b745657-3786-4413-b365-d35c90d7b22a] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[9b745657-3786-4413-b365-d35c90d7b22a] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-29T20:38:04.346693 #11899]  INFO -- : [f54be40b-681a-43b9-b59f-7c287b074891] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:04 +0100
+I, [2018-11-29T20:38:04.347497 #11899]  INFO -- : [f54be40b-681a-43b9-b59f-7c287b074891] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:04.348938 #11899]  INFO -- : [f54be40b-681a-43b9-b59f-7c287b074891]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:04.354091 #11899]  INFO -- : [f54be40b-681a-43b9-b59f-7c287b074891]   Rendered items/index.html.erb within layouts/application (5.0ms)
+I, [2018-11-29T20:38:04.354363 #11899]  INFO -- : [f54be40b-681a-43b9-b59f-7c287b074891] Completed 500 Internal Server Error in 7ms
+F, [2018-11-29T20:38:04.355125 #11899] FATAL -- : [f54be40b-681a-43b9-b59f-7c287b074891]   
+F, [2018-11-29T20:38:04.355185 #11899] FATAL -- : [f54be40b-681a-43b9-b59f-7c287b074891] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:04.355336 #11899] FATAL -- : [f54be40b-681a-43b9-b59f-7c287b074891]     56: 
+[f54be40b-681a-43b9-b59f-7c287b074891]     57: 
+[f54be40b-681a-43b9-b59f-7c287b074891]     58: <div class= "col">
+[f54be40b-681a-43b9-b59f-7c287b074891]     59: <% @items.sort.each do |product| %>
+[f54be40b-681a-43b9-b59f-7c287b074891]     60:     <div id="grid">
+[f54be40b-681a-43b9-b59f-7c287b074891]     61: 
+[f54be40b-681a-43b9-b59f-7c287b074891]     62:     <div class="product">
+F, [2018-11-29T20:38:04.355363 #11899] FATAL -- : [f54be40b-681a-43b9-b59f-7c287b074891]   
+F, [2018-11-29T20:38:04.355381 #11899] FATAL -- : [f54be40b-681a-43b9-b59f-7c287b074891] app/views/items/index.html.erb:59:in `sort'
+[f54be40b-681a-43b9-b59f-7c287b074891] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T20:38:05.004519 #11899]  INFO -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:05 +0100
+I, [2018-11-29T20:38:05.006271 #11899]  INFO -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:05.010335 #11899]  INFO -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:05.019977 #11899]  INFO -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]   Rendered items/index.html.erb within layouts/application (9.3ms)
+I, [2018-11-29T20:38:05.020448 #11899]  INFO -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] Completed 500 Internal Server Error in 14ms
+F, [2018-11-29T20:38:05.023364 #11899] FATAL -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]   
+F, [2018-11-29T20:38:05.023622 #11899] FATAL -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:05.024477 #11899] FATAL -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     56: 
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     57: 
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     58: <div class= "col">
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     59: <% @items.sort.each do |product| %>
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     60:     <div id="grid">
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     61: 
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]     62:     <div class="product">
+F, [2018-11-29T20:38:05.024654 #11899] FATAL -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0]   
+F, [2018-11-29T20:38:05.024791 #11899] FATAL -- : [b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] app/views/items/index.html.erb:59:in `sort'
+[b6cf4e7e-7a9a-4292-aafc-f1bda1e21af0] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T20:38:05.181679 #11899]  INFO -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:05 +0100
+I, [2018-11-29T20:38:05.183182 #11899]  INFO -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:05.187880 #11899]  INFO -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:05.198231 #11899]  INFO -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0]   Rendered items/index.html.erb within layouts/application (10.0ms)
+I, [2018-11-29T20:38:05.198746 #11899]  INFO -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0] Completed 500 Internal Server Error in 15ms
+F, [2018-11-29T20:38:05.203686 #11899] FATAL -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0]   
+F, [2018-11-29T20:38:05.203985 #11899] FATAL -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:05.205169 #11899] FATAL -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0]     56: 
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     57: 
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     58: <div class= "col">
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     59: <% @items.sort.each do |product| %>
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     60:     <div id="grid">
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     61: 
+[49788cf4-ab14-4673-b913-b6e0d596e9f0]     62:     <div class="product">
+F, [2018-11-29T20:38:05.205346 #11899] FATAL -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0]   
+F, [2018-11-29T20:38:05.205532 #11899] FATAL -- : [49788cf4-ab14-4673-b913-b6e0d596e9f0] app/views/items/index.html.erb:59:in `sort'
+[49788cf4-ab14-4673-b913-b6e0d596e9f0] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T20:38:05.688700 #11899]  INFO -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:05 +0100
+I, [2018-11-29T20:38:05.690573 #11899]  INFO -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:05.696682 #11899]  INFO -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:05.708555 #11899]  INFO -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a]   Rendered items/index.html.erb within layouts/application (11.5ms)
+I, [2018-11-29T20:38:05.709087 #11899]  INFO -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a] Completed 500 Internal Server Error in 18ms
+F, [2018-11-29T20:38:05.712908 #11899] FATAL -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a]   
+F, [2018-11-29T20:38:05.713079 #11899] FATAL -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:05.714157 #11899] FATAL -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a]     56: 
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     57: 
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     58: <div class= "col">
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     59: <% @items.sort.each do |product| %>
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     60:     <div id="grid">
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     61: 
+[ac67fc05-e2b3-4391-b44d-77120b72af5a]     62:     <div class="product">
+F, [2018-11-29T20:38:05.714317 #11899] FATAL -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a]   
+F, [2018-11-29T20:38:05.714464 #11899] FATAL -- : [ac67fc05-e2b3-4391-b44d-77120b72af5a] app/views/items/index.html.erb:59:in `sort'
+[ac67fc05-e2b3-4391-b44d-77120b72af5a] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T20:38:05.855496 #11899]  INFO -- : [14ce282c-434c-4d41-806e-900bc260708a] Started GET "/" for 127.0.0.1 at 2018-11-29 20:38:05 +0100
+I, [2018-11-29T20:38:05.857653 #11899]  INFO -- : [14ce282c-434c-4d41-806e-900bc260708a] Processing by ItemsController#index as HTML
+I, [2018-11-29T20:38:05.864109 #11899]  INFO -- : [14ce282c-434c-4d41-806e-900bc260708a]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T20:38:05.876082 #11899]  INFO -- : [14ce282c-434c-4d41-806e-900bc260708a]   Rendered items/index.html.erb within layouts/application (11.4ms)
+I, [2018-11-29T20:38:05.876619 #11899]  INFO -- : [14ce282c-434c-4d41-806e-900bc260708a] Completed 500 Internal Server Error in 19ms
+F, [2018-11-29T20:38:05.879636 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a]   
+F, [2018-11-29T20:38:05.879780 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T20:38:05.880535 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a]     56: 
+[14ce282c-434c-4d41-806e-900bc260708a]     57: 
+[14ce282c-434c-4d41-806e-900bc260708a]     58: <div class= "col">
+[14ce282c-434c-4d41-806e-900bc260708a]     59: <% @items.sort.each do |product| %>
+[14ce282c-434c-4d41-806e-900bc260708a]     60:     <div id="grid">
+[14ce282c-434c-4d41-806e-900bc260708a]     61: 
+[14ce282c-434c-4d41-806e-900bc260708a]     62:     <div class="product">
+F, [2018-11-29T20:38:05.880637 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a]   
+F, [2018-11-29T20:38:05.880733 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a] app/views/items/index.html.erb:59:in `sort'
+[14ce282c-434c-4d41-806e-900bc260708a] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
