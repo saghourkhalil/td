@@ -131,3 +131,21 @@ F, [2018-11-29T20:38:05.880535 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc
 F, [2018-11-29T20:38:05.880637 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a]   
 F, [2018-11-29T20:38:05.880733 #11899] FATAL -- : [14ce282c-434c-4d41-806e-900bc260708a] app/views/items/index.html.erb:59:in `sort'
 [14ce282c-434c-4d41-806e-900bc260708a] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__3027697649047978238_47131673487760'
+I, [2018-11-29T21:21:04.797057 #16023]  INFO -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3] Started GET "/" for 127.0.0.1 at 2018-11-29 21:21:04 +0100
+I, [2018-11-29T21:21:05.011254 #16023]  INFO -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3] Processing by ItemsController#index as HTML
+I, [2018-11-29T21:21:05.071355 #16023]  INFO -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3]   Rendering items/index.html.erb within layouts/application
+I, [2018-11-29T21:21:05.241776 #16023]  INFO -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3]   Rendered items/index.html.erb within layouts/application (170.1ms)
+I, [2018-11-29T21:21:05.242463 #16023]  INFO -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3] Completed 500 Internal Server Error in 231ms
+F, [2018-11-29T21:21:05.246954 #16023] FATAL -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3]   
+F, [2018-11-29T21:21:05.247257 #16023] FATAL -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3] ActionView::Template::Error (FATAL:  authentification peer échouée pour l'utilisateur « kittycat-shop »
+):
+F, [2018-11-29T21:21:05.248155 #16023] FATAL -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     56: 
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     57: 
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     58: <div class= "col">
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     59: <% @items.sort.each do |product| %>
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     60:     <div id="grid">
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     61: 
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3]     62:     <div class="product">
+F, [2018-11-29T21:21:05.248335 #16023] FATAL -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3]   
+F, [2018-11-29T21:21:05.248479 #16023] FATAL -- : [a7e5ada7-0bc4-48ce-b300-fc03507f12a3] app/views/items/index.html.erb:59:in `sort'
+[a7e5ada7-0bc4-48ce-b300-fc03507f12a3] app/views/items/index.html.erb:59:in `_app_views_items_index_html_erb__1461094400574438112_69877138317120'
